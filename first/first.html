@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<style>
+  h1.title{
+    text-align: center;
+    color:rgb(236, 162, 24);
+    min-width:1300px;
+    font-size: 40px;
+  }
+  .accelerated{
+    width: 200px;
+    height: 200px;
+  }
+  .wrapper:hover,
+  .wrapper:focus {
+    transform: translateX(10px);
+  }
+
+  .box{
+  border-radius: 20px;
+}
+.wrapper{
+  width: 440px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: burlywood;
+  transition: transform 750ms;
+  will-change: transform;
+}
+.photo{
+    float:left;
+    width:50%;
+}
+.intro{
+    float:right;
+    width:50%;
+}
+.intro>p{
+  color:darkcyan;
+  max-width: 200px;
+}
+#members{
+  color:darkorchid;
+  padding-left: 20px;
+}
+</style>
+<body background="pic/band.jpg"style=" background-repeat:no-repeat;
+background-size:100% 100%;background-attachment:fixed;background-size:cover;">
+ <h1 class="title">My Band!</h1>
+ <h2 id="members">乐队成员</h2>
+    <div class="wrapper">
+    <div class="photo"><img src="pic/man1.jpg" class="accelerated box"></div>
+    <div class="intro">
+      <h3>王老师</h3>
+      <p>主唱,有天籁歌喉,非常帅气帅气帅气帅气帅气帅气帅气帅气帅气</p>
+    </div>
+    </div>
+    <br>
+    <div class="wrapper">
+      <div class="photo"><img src="pic/girl1.jpg" class="accelerated box"></div>
+      <div class="intro">
+        <h3>董姐姐</h3>
+        <p>节奏吉他，非常美丽美丽美丽美丽美丽美丽美丽美丽美丽美丽</p>
+      </div>
+      </div>
+ 
+
+</body>
+</html>
