@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Crazy Prize!</title>
+    <style>
+        .title{
+            text-align: center;
+            color: brown;
+            font-size: 90px;
+        }
+        .container{
+            display: flex;
+            padding-left: 420px;
+            
+        }
+        .rule{
+            margin-left: 20px;
+            min-width: 300px;
+            outline: 3px solid black;
+            border-radius: 5px;
+            height: 400px;
+            width: 300px;
+            color: cadetblue;
+        }
+
+        .rule>h1{
+            text-align: center;
+        }
+        .rule>p{
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .row {
+            display: flex;
+        }
+        .cell {
+            background-color:bisque;
+            outline: 3px solid black;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .score_time{
+            display:flex;
+            min-width: 600px;
+            margin-left: 840px;
+            margin-top:10px;
+            font-size: 20px;
+        }
+        .time{
+            margin-left:20px;
+        }
+
+        body{
+            background-color: antiquewhite;
+        }
+        .button{
+            transition: transform 150ms;
+            margin-left: 110px;
+            width: 80px;
+            height: 40px;
+            border-radius: 6px;
+            border: none;
+            background-color:rgb(240, 160, 187);
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Crazy Prize!</h1>
+    <div class="container">
+        <div class="mapbox"></div>
+        <div class="rule">
+            <h1>规则</h1>
+            <p>1. <img src="img/prize.svg" width="20" height="20" align="top">这是一张非常可爱非常可爱非常可爱非常可爱非常可爱的奖杯，吃了有加分！</p>
+            <p>2. <img src="img/robot.svg" width="20" height="20" align="top">机器人。这是玩家操控的角色，可通过 "↑""↓""←""→"  或 "W""A""S""D" 进行操控。</p>
+            <p>3. <img src="img/bomb.png" width="20" height="20" align="top">炸弹。玩家不能触碰炸弹，否则游戏结束。</p>
+            <p>4. 游戏进行时间为30秒。</p>
+            <button class="button">Start!</button>
+        </div>
+    </div>
+    <div class="score_time">
+        <div class="score">得分:0</div>
+        <div class="time">剩余时间:30秒</div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
