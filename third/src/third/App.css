@@ -1,0 +1,15 @@
+body {
+  background: floralwhite;
+}
+
+.todo-container {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.todo-container .todo-wrap {
+  padding: 10px;
+  border: 2px solid rgb(126, 124, 124);
+  border-radius: 10px;
+}

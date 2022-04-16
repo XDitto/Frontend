@@ -1,0 +1,63 @@
+.todo-progress {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 6px;
+  margin-top: 5px;
+}
+
+.checkAll {
+  display: none;
+  position: relative;
+}
+
+.decoration:before {
+  cursor: pointer;
+  content: '';
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-top: 15px solid rgb(211, 230, 246);
+  border-left: 0px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  margin-left: -5px;
+  top: 266.5px;
+}
+
+.checkAll:checked + .decoration:before {
+  border-top-color: rgb(123, 164, 245);
+  transition: 0.2s;
+}
+
+.show {
+  position: relative;
+  left: 20%;
+}
+
+.list-show {
+  cursor: pointer;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  background-color: floralwhite;
+  font-size: medium;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.show button:hover {
+  border: 2px solid rgb(192, 191, 188);
+  border-radius: 4px;
+}
+
+.clear {
+  float: right;
+  padding: 12px 12px;
+  font-size: medium;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  background-color: floralwhite;
+}

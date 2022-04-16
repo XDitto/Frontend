@@ -1,0 +1,10 @@
+.tips{
+    text-align: center;
+    color:rgb(205, 202, 202);
+    font-size: 14px;
+    position: relative;
+    margin-top: 30px;
+}
+.tips span{
+    display: block;
+}

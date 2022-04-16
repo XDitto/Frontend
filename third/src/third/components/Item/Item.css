@@ -1,0 +1,94 @@
+.todo-item:hover {
+  background-color: rgb(218, 226, 244);
+}
+
+.todo-item li {
+  list-style: none;
+  display: inline-block;
+  width: 500px;
+  border-bottom: 1px solid #ddd;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: larger;
+}
+
+.todo-item li:before {
+  content: initial;
+}
+
+.todo-item li:last-child {
+  border-bottom: 2px solid silver;
+}
+
+.todo-item label {
+  cursor: pointer;
+  float: left;
+  position: relative;
+}
+
+.item-checkbox {
+  visibility: hidden;
+  vertical-align: middle;
+  top: -1px;
+}
+
+.checkbox-decoration {
+  margin-left: -50px;
+}
+
+.checkbox-decoration:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 3px;
+}
+
+.item-checkbox:checked + .checkbox-decoration:before {
+  background-color: rgb(123, 164, 245);
+  transition: 0.2s linear;
+}
+
+.item-content {
+  color: rgb(165, 160, 160);
+  text-decoration: line-through;
+  transition: 0.1s linear;
+}
+
+.item-del {
+  display: none;
+  border: rgb(218, 226, 244);
+  background-color: rgb(218, 226, 244);
+  cursor: pointer;
+  width: 26px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.item-del::before {
+  content: '\2716';
+  color: rgb(163, 30, 30);
+}
+
+.item-edit {
+  width: 480px;
+  height: 28px;
+  font-size: medium;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 7px;
+}
+
+.item-edit:focus {
+  font-size: medium;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 7px;
+}
