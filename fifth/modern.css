@@ -1,0 +1,197 @@
+.hero {
+    align-items: center;
+    background-color: var(--ifm-hero-background-color);
+    color: var(--ifm-hero-text-color);
+    display: flex;
+    padding: 4rem 2rem;
+}
+
+.hero--primary {
+    --ifm-hero-background-color: var(--ifm-color-primary);
+    --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+}
+.heroBanner_qdFl {
+    align-items: flex-start;
+    background-color: #000;
+    background-image: url(https://lf3-static.bytednsdoc.com/obj/eden-cn/aphqeh7uhohpquloj/modern-js/bg.png);
+    background-origin: border-box;
+    background-position: bottom;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 691px;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding-left: 18%;
+    position: relative;
+}
+
+.title_GqtP {
+    color: #fff;
+    font-family: Noto Sans SC;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 21px;
+}
+.buttons_AeoN {
+    display: flex;
+    justify-content: center;
+    margin-top: 87px;
+}
+
+.start_RUNT {
+    background: linear-gradient(274.85deg,#4ecaff 3%,#64cfde 97.17%);
+    border-radius: 39px;
+    box-shadow: 0 1px 39px rgb(133 250 202 / 34%);
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 48px;
+    opacity: .8;
+    width: 147px;
+}
+.start_RUNT, .start_RUNT:hover {
+    color: #000;
+    transition: opacity .3s;
+}
+.card_LAt6, .start_RUNT {
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.doc-btn_gVIP{
+    align-items: center;
+    background: hsla(0,0%,100%,.07);
+    border: 1px solid #4ecaff;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    color: #00b3ff;
+    cursor: pointer;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-left: 2rem;
+    transition: .3s;
+    width: 9rem;
+    text-decoration: none;
+}
+
+.floor{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    background-color: #000;
+    z-index: 1;
+}
+
+
+.col a{
+    color: rgba(255, 255, 255, 0.853);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow: hidden;
+    background: #000;
+    display: inline-block;
+    opacity: .95;
+    text-align: center;
+    width: 100%;
+}
+
+.col a:hover{
+    background: linear-gradient(0deg,rgba(46,232,246,.3),rgba(0,238,255,0));
+    cursor: pointer;
+    opacity: 1;
+}
+
+.col a:hover{
+    color: #fff;
+    transition: 3s;
+}
+
+.floorlink{
+    display: block;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+/* 平板 */
+@media screen and (max-width: 1399px) and (min-height: 720px){
+    .buttons_AeoN{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .intro{
+        align-items: center;
+        margin-top: 1rem;
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .doc-btn_gVIP{
+        align-items: center;
+        margin-top: 6rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1399px) and (min-height: 1200px){
+    .buttons_AeoN{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .intro{
+        align-items: center;
+        margin-top: 5rem;
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .doc-btn_gVIP{
+        align-items: center;
+        margin-top: 8rem;
+        width: 50%;
+    }
+}
+
+/* 手机 */
+@media screen and (max-width: 540px){
+    .buttons_AeoN{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 65%;
+    }
+    .intro{
+        align-items: center;
+        margin-top: 2rem;
+        width: 65%;
+        margin-left: 2rem;
+    }
+    .doc-btn_gVIP{
+        align-items: center;
+        margin-top: 2rem;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .word {
+        font-size: 8vw
+    }
+    .logo{
+        width: 70vw;
+        margin-top: 60px;
+    } 
+}
