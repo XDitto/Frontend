@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+<div><input type="text" id="time"></div>
+<div><input type="text" id="task"></div>
+<button onclick="save()">保存到本地</button>
+ <script>
+ var jsonArray=JSON.parse(JSON.getItem('localData'));
+  function save(){
+         //创建json对象
+     var jsonData={"time":"","task":""};
+      //设置修改json对象的值
+   console.log(jsonData);
+    //把json对象添加到数组末尾
+     jsonArray.push(jsonData);
+     console.log(jsonArray);
+      //JSON.stringify(jsonArray)转化数组为字符串格式
+     var jsonArrayString=JSON.stringify(jsonArray);
+     //用localStorage存储数组到本地浏览器数据
+       localStorage.setItem("localData",jsonArrayString);
+        //得到localstorage中的数据
+     var getLocalData = localStorage.getItem('localData');
+           //JSON.parse(getLocalData)；将字符串格式转化回来
+
+
+  }
+
+
+</script>
+ </body>
+</html>
