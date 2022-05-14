@@ -1,0 +1,72 @@
+@import '../../common/colors.scss';
+
+.leaveContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex:1;
+        overflow:auto;
+        -webkit-overflow-scrolling:touch;
+        margin-top: 20px;
+
+        .formPerfect {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ant-form-item {
+            width: 90%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        .ant-input, .ant-time-picker-input {
+            height: 35px;
+        }
+
+        .ant-time-picker-input {
+            width: 98%;
+            margin-left: 2px;
+        }
+
+        .ant-form-item-children {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .ant-form-item-children span {
+            flex: 1;
+        }
+
+        #perfect_reason {
+            height: auto;
+        }
+
+        #perfect_startTime, #perfect_endTime {
+            width: 50%;
+        }
+
+        .submitBtn {
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background: $primary;
+            border: 1px solid $primary;
+            outline: none;
+            margin-top: 24px;
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+    }
+}
